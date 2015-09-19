@@ -15,23 +15,14 @@
 <!--// bootstarp-css -->
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/form.css" type="text/css" media="all" />
 <!--// css -->
 <script src="js/jquery.min.js"></script>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-	
-<script
-	src="js/jquery.flexslider-min.js"></script>
-<!--fonts-->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-<!--/fonts-->
+<!-- dropdown -->
 <link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>
-<script src="js/scripts.js" type="text/javascript"></script>
-<!--js-->
-<!--/js-->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <style>
-		  .top-nav > .menus
+				  .top-nav > .menus
         {
             height: 30px;
             margin-top: 15px;
@@ -59,9 +50,7 @@
                     white-space: nowrap;
                 }
 				
-				#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
-	display: none;
-}
+
 .nbs-flexisel-container {
 	position: relative;
 	max-width: 94%;
@@ -76,7 +65,7 @@
 }
 .nbs-flexisel-inner {
 	overflow: hidden;
-	width:90%;
+	/*--width:80%;--*/
 	margin: 0 auto;
 }
 .nbs-flexisel-item {
@@ -151,7 +140,7 @@ div.itemprice{font-size: .9em;color:#b20000;
 	height: 50px;
 	border: none;
 	text-indent: 100%;
-	/*background: url(images/down_arrow.png) no-repeat right top;*/
+	background: url(images/down_arrow.png) no-repeat right top;
 }
 
 .series-container .row{
@@ -161,20 +150,48 @@ div.itemprice{font-size: .9em;color:#b20000;
 }
 
 .item_info {
-	/*color: #595757;*/
-
+	color: #595757;
+    margin:0;
+    text-align: left;
 }
+ul.subsection {
+ margin:0px;
+ padding:0px;
+}
+ul.subsection li{
+ list-style:none;
+}
+
 .item_title {
-	padding: 0px;
-	margin: 5px 0;
-	font-size: .857em;
+	font-weight:bold;
+	margin-top: 10px;
+	font-size: 14px;
+	text-align:left;
 }
-
+.item_subtitle {
+	padding: 0px;
+	margin-top: 5px;
+	font-size: 12px;
+	text-align:left;
+}
 .item_size {
 	padding: 0px;
-	margin: 0px;
+	margin-top: -10px;
 	list-style: none;
 	text-align: center;
+}
+.saleprice{
+	font-weight: bold;
+	color: red;
+	font-size: 14px;
+}
+.oriprice{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 0px;
+	font-size: .9em;
+	text-decoration: line-through;
+	margin-right: .9em;
 }
 .item_size li {
 	display: inline-block;
@@ -182,7 +199,7 @@ div.itemprice{font-size: .9em;color:#b20000;
 	height:18px;
 	margin: 5px 1.8px;
 	padding: 0px;
-	border: 1px solid #595757;
+	border: 0px solid #595757;
 	text-align: center;
 	font-size: .75em;
 	line-height: 16px;
@@ -193,10 +210,32 @@ div.itemprice{font-size: .9em;color:#b20000;
 	color: #dbdcdc;
 }
 
-.item_price {
+.item_price .singleprice{
 	padding: 0px;
 	margin: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+	font-size: .9em;
+	font-weight: bold;
+}
+.item_price .oriprice{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 0px;
+	font-size: .9em;
+	text-decoration: line-through;
+	margin-right: .9em;
+}
+
+/*.item_price span~span {
+	float: left;
+	margin-right: .8em;
+	text-decoration: line-through;
+}*/
+/*.item_price {
+	padding: 0px;
+	margin-left: 1px;
+	margin-bottom: 5px;
+	margin-top: 10px;
 	font-size: .857em;
 	color: #b20000;
 }
@@ -204,9 +243,50 @@ div.itemprice{font-size: .9em;color:#b20000;
 	float: left;
 	margin-right: .8em;
 	text-decoration: line-through;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}*/
+
+		.single{
+	        padding:3% 0 0 0;
+        }
+		.wrap{
+	width:85%;
+	margin:0 auto;
+	-moz-transition:all .2s linear;
+	-webkit-transition:all .2s linear; 
+	-o-transition:all .2s linear; 
+	-ms-transition:all .2s linear;
+}
+.rsidebar {
+	display: block;
+	float: left;
+	margin: 1% 1% 0% 0;
+}
+.span_2_of_3 {
+	width: 77.1%;
+}
+.span_1_of_left {
+	width:17%;
 }
 
-</style>
+.sky-form .title {
+outline:none;
+	border:none;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	font-size: 13px;
+	color: #000;
+	text-transform: capitalize;
+}
+
+.product_image {
+cursor: pointer;
+}
+#slidesdiv img {
+ border: 1px black solid;
+}
+		</style>
 </head>
 <body>
 <div class="header">
@@ -221,7 +301,6 @@ div.itemprice{font-size: .9em;color:#b20000;
 				    <ul class="contact">
 						<li><a href='' target="_blank"><img src='images/fbbtn3.jpg' width='108px' height='35px'/></a></li>
 						<li class=""><b>Service time :</b> 09: 00-18: 30</li>
-						<!--<li class="mail"><b>E-mail :</b> <a href="mailto:zoyaintaiwan@gmail.com">zoyaintaiwan@gmail.com</a></li>-->
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -229,10 +308,10 @@ div.itemprice{font-size: .9em;color:#b20000;
 			<div class="top-nav">
 					<div class="menus">
 					<a href="index.html"><span>Home</span></a>
-					<a href="new-arrival.html"><span>New Arrival</span></a>                 
-					<a href="zoya-product.html"><span>Github Project</span></a>
+					<a href="#"><span>New Arrival</span></a>                 
+					<a href="#"><span>Github Project</span></a>
 					<!--<a href="event.html"><span>Event</span></a>-->    				
-					<a href="how-to-order.html"><span>How to order</span></a>
+					<a href="#"><span>How to Order</span></a>
 					</div>
 			</div>
 			
@@ -242,7 +321,69 @@ div.itemprice{font-size: .9em;color:#b20000;
 		</div>
 		<!-- //container -->
 	</div>
-<div class="footer">
+	<div class="container">
+	<div class="maincontent">
+     	    <div class="rsidebar span_1_of_left">
+				<section  class="sky-form">
+					<div class="row1">
+					  <label class="title">New Arrival</label>
+					 <label class="checkbox" id='Newarrival'>- new products this week</label>
+					 </div>
+					 <div class="row1">
+					  <label class="title">Books</label>
+					  <label class="checkbox" id='5'>- 壽司幹嘛轉來轉去</label>
+					  <label class="checkbox" id='1'>- 華爾街刺蝟投資客</label>
+					  <label class="checkbox" id='2'>- 大敗局</label>
+					  <label class="checkbox" id='3'>- 人性的弱點</label>
+					  <!--<label class="checkbox" id='5'>- Ciput</label>-->
+					 </div>
+					  <div class="row1">
+					  <label class="title">Mobile Phone</label>
+					  <label class="checkbox" id='4'>- Phone1</label>
+					  <label class="checkbox" id='6'>- Phone2</label>
+					 </div>
+                </section> 
+				 
+		    </div>
+		<div class="cont span_2_of_3">
+		      <div class="pag-nav">
+			   <ul class="p-list">
+				<li><a href="index.html" class="act">Home</a></li><font size='0.4em'>&nbsp;&nbsp;>&nbsp;</font>
+				<li>Github Project</li>
+			   </ul>
+		      </div>
+			  <div class="labout span_1_of_a1">
+				<div><img src="images/banner1.png" width='100%' height='auto'></div>
+				 <div class="row" id='slidesdiv' style='padding-top:1.5em'>
+				 <div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜1</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜2</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜3</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜4</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜5</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜6</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜7</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜8</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+<div class="col-md-3 col-sm-4 col-xs-6" align="left"><div class="product_image"><a href="#"><img class="img-responsive" src="images/photo1.png"></a><div class="item_info"><ul class="subsection"><li class="item_title">馬來膜9</li><li class="item_subtitle">Product Code:&nbsp;&nbsp;ZKK.B1.001</li><li class="item_subtitle saleprice">NT. 230</li></ul></div></div><br><br></div>
+
+
+<div class="clearfix"> </div>
+				 </div>
+			</div>
+     </div>
+		
+     <div class="clear"></div>
+     </div>
+	 </div>
+	
+    <div class="footer">
 	<!-- container -->
 		<div class="container">
 			<div class="copyright">
