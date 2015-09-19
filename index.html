@@ -31,9 +31,227 @@
 <!--/js-->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <style>
+		  .top-nav > .menus
+        {
+            height: 30px;
+            margin-top: 15px;
+			margin-left: 20px;
+            color: white;
+        }
+
+            .top-nav > .menus > a
+            {
+                /*color: #7e7f84;*/
+				color:#fff;
+                display: block;
+                float: left;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                .top-nav > .menus > a > span
+                {
+                    font-size: 14px;
+					font-weight:400;
+                    margin-right: 45px;
+                    letter-spacing: 1px;
+                    display: block;
+                    white-space: nowrap;
+                }
+				
+				#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+	display: none;
+}
+.nbs-flexisel-container {
+	position: relative;
+	max-width: 94%;
+}
+.nbs-flexisel-ul {
+	position: relative;
+	width: 9999px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+.nbs-flexisel-inner {
+	overflow: hidden;
+	width:90%;
+	margin: 0 auto;
+}
+.nbs-flexisel-item {
+	float: left;
+	margin:0px;
+	padding:0px;
+	cursor: pointer;
+	position: relative;
+	line-height: 0px;
+	/*--padding-right:50px;--*/
+}
+.nbs-flexisel-item > img {
+	/*--width:60%;--*/
+	cursor: pointer;
+	positon: relative;
+	margin-top:10px;
+	margin-bottom: 10px;
+	max-width:150px;
+	max-height:500px;
+}
+.grid-flex{
+	margin:10px 0 20px 0;
+}
+.nbs-flexisel-item a {
+	color: #999;
+	font-size:0.8125em;
+}
+.nbs-flexisel-item a:hover{
+	color:#555;
+}
+.nbs-flexisel-item p {
+	color: #000;
+	font-size: 0.85em;
+	padding-top: 25px;
+}
+.nbs-flexisel-item > img {
+	cursor: pointer;
+	positon: relative;
+}
+/*** Navigation ***/
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+	width:30px;
+	height:30px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+}
+.nbs-flexisel-nav-left {
+	left: 0px;
+	background: url(images/img-sprite.png) no-repeat -166px -315px;
+}
+.nbs-flexisel-nav-right {
+	right: 0px;
+	background: url(images/img-sprite.png) no-repeat -193px -315px;
+}
+
+div.itemname{
+
+	font-size: .857em;
+	color:#646565;}
+div.itemprice{font-size: .9em;color:#b20000;
+	margin-right: 5px;}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom:50px;
+	right: 10px;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	border: none;
+	text-indent: 100%;
+	/*background: url(images/down_arrow.png) no-repeat right top;*/
+}
+
+.series-container .row{
+	position: relative;
+	max-width: 90%;
+	align:center;
+}
+
+.item_info {
+	/*color: #595757;*/
+
+}
+.item_title {
+	padding: 0px;
+	margin: 5px 0;
+	font-size: .857em;
+}
+
+.item_size {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-align: center;
+}
+.item_size li {
+	display: inline-block;
+	width: 18px;
+	height:18px;
+	margin: 5px 1.8px;
+	padding: 0px;
+	border: 1px solid #595757;
+	text-align: center;
+	font-size: .75em;
+	line-height: 16px;
+	
+}
+.item_size .soldout {
+	border-color: #dbdcdc;
+	color: #dbdcdc;
+}
+
+.item_price {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	font-size: .857em;
+	color: #b20000;
+}
+.item_price span~span {
+	float: left;
+	margin-right: .8em;
+	text-decoration: line-through;
+}
+
 </style>
 </head>
 <body>
+<div class="header">
+		<!-- container -->
+		<div class="container">
+			<!-- header-top -->
+			<div class="header-top">
+				<div class="header-logo">
+					<a href="index.html"><img src="images/github-logo.png" alt="" /></a>
+				</div>
+				<div class="header-right">
+				    <ul class="contact">
+						<li><a href='' target="_blank"><img src='images/fbicon.png' width='24px' height='24px'/>&nbsp;&nbsp;&nbsp;ID:&nbsp;&nbsp;Github store</a></li>
+						<li class=""><b>Service time :</b> 09: 00-18: 30</li>
+						<!--<li class="mail"><b>E-mail :</b> <a href="mailto:zoyaintaiwan@gmail.com">zoyaintaiwan@gmail.com</a></li>-->
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="top-nav">
+					<div class="menus">
+					<a href="index.html"><span>Home</span></a>
+					<a href="new-arrival.html"><span>New Arrival</span></a>                 
+					<a href="zoya-product.html"><span>Github Project</span></a>
+					<!--<a href="event.html"><span>Event</span></a>-->    				
+					<a href="how-to-order.html"><span>How to order</span></a>
+					</div>
+			</div>
+			
+			<div class="clearfix" style='border-bottom:solid 1px #e2e4e9;background-color:#08080b;'> </div>
+			<!-- script-for-menu -->
+		
+		</div>
+		<!-- //container -->
+	</div>
+<div class="footer">
+	<!-- container -->
+		<div class="container">
+			<div class="clearfix"> </div>
+			<div class="copyright">
+					<p class="innerfooter_copyright">Copyright © 2015 by SEI Technology CO.LTD. ALL RIGHTS RESERVED.</p>
+		    </div>
+		</div>
+	<!-- // container -->
+</div>
 <script type="text/javascript">
 $(window).scroll(function() {
     if ($(this).scrollTop() > 50 ) {
